@@ -1,0 +1,152 @@
+/*
+ * The site's signature move: serif body, sans headings. Keeping that inversion is
+ * most of what makes the deck read as "his slides" rather than "a Slidev deck".
+ */
+
+html,
+body,
+#slide-content {
+  background-color: var(--jsk-bg-deep);
+}
+
+::selection {
+  background: rgb(167 139 250 / 0.22);
+  color: var(--jsk-heading);
+}
+
+.slidev-layout {
+  background-color: var(--jsk-bg-deep);
+  color: var(--jsk-body);
+  font-family: var(--jsk-font-serif);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout h4,
+.slidev-layout h5 {
+  font-family: var(--jsk-font-sans);
+  color: var(--jsk-heading);
+  font-weight: 650;
+  text-wrap: balance;
+}
+
+.slidev-layout h1 {
+  font-size: 2.5rem;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.7rem;
+}
+
+.slidev-layout h2 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.slidev-layout h3 {
+  font-size: 1.3rem;
+  letter-spacing: -0.015em;
+}
+
+/* h6 is the eyebrow: uppercase, accent, tracked out. Same as the site's label-caps. */
+.slidev-layout h6 {
+  font-family: var(--jsk-font-sans);
+  color: var(--jsk-accent);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-bottom: 0.5rem;
+}
+
+/* The line directly under a heading is a subtitle, not body copy. */
+.slidev-layout h1 + p {
+  margin-top: -0.15rem;
+  font-size: 1.15rem;
+  color: var(--jsk-muted);
+  opacity: 1;
+}
+
+.slidev-layout strong,
+.slidev-layout b {
+  color: var(--jsk-heading);
+  font-weight: 600;
+}
+
+.slidev-layout em {
+  color: var(--jsk-heading);
+  font-style: italic;
+}
+
+.slidev-layout a {
+  color: var(--jsk-accent);
+  border: none;
+  text-decoration: underline;
+  text-decoration-color: rgb(167 139 250 / 0.35);
+  text-underline-offset: 3px;
+}
+
+.slidev-layout a:hover {
+  text-decoration-color: var(--jsk-accent);
+}
+
+.slidev-layout ul {
+  list-style: none;
+}
+
+.slidev-layout ul > li::before {
+  content: '';
+  display: inline-block;
+  width: 0.3em;
+  height: 0.3em;
+  margin-right: 0.6em;
+  margin-bottom: 0.18em;
+  border-radius: 1px;
+  background: var(--jsk-accent);
+  opacity: 0.65;
+}
+
+.slidev-layout table {
+  font-family: var(--jsk-font-sans);
+  font-size: 0.9em;
+  border-collapse: collapse;
+}
+
+.slidev-layout th {
+  color: var(--jsk-muted);
+  font-family: var(--jsk-font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.slidev-layout tr {
+  border-bottom: 1px solid var(--jsk-border-subtle);
+}
+
+.slidev-layout tbody tr:last-child {
+  border-bottom: none;
+}
+
+.slidev-layout blockquote {
+  background: var(--jsk-bg-surface);
+  border-left: 2px solid var(--jsk-accent);
+  border-radius: 0 0.375rem 0.375rem 0;
+  color: var(--jsk-body);
+  padding: 0.6rem 0.9rem;
+}
+
+.slidev-layout kbd {
+  background: var(--jsk-bg-surface);
+  border: 1px solid var(--jsk-border-subtle);
+  border-bottom-width: 2px;
+  border-radius: 0.25rem;
+  color: var(--jsk-heading);
+  font-family: var(--jsk-font-mono);
+}

@@ -1,0 +1,49 @@
+/*
+ * Design tokens lifted verbatim from juststeveking.com's Tailwind v4 theme layer.
+ * The site is dark-only, so this theme is too — there is no light variant to keep in sync.
+ */
+
+:root {
+  /* Surfaces and text — site semantic tokens, same names. */
+  --jsk-bg-deep: #0b0a10;
+  --jsk-bg-surface: #16141f;
+  --jsk-heading: #f3f1f8;
+  --jsk-body: #aca6be;
+  --jsk-muted: #918aa8;
+  --jsk-accent: #a78bfa;
+  --jsk-border-subtle: #262233;
+  --jsk-border-strong: #635d80;
+
+  /* Type stacks — self-hosted in fonts.css. */
+  --jsk-font-sans: 'Geist Variable', 'Geist', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --jsk-font-serif: 'Source Serif 4 Variable', 'Source Serif 4', serif;
+  --jsk-font-mono: 'Geist Mono Variable', 'Geist Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  /*
+   * The four kinds of waiting. These are load-bearing for the talk's argument —
+   * the legend, the Timeline bars and the inline spans must all agree.
+   * Hues are the site's own 400-level scale, so they sit in the same family.
+   * `sleep` is the site accent: the longest wait wears the brand colour.
+   */
+  --wf-run: oklch(76.5% 0.177 163.223);
+  --wf-run-soft: oklch(76.5% 0.177 163.223 / 0.34);
+  --wf-run-faint: oklch(76.5% 0.177 163.223 / 0.08);
+
+  --wf-signal: oklch(74.6% 0.16 232.661);
+  --wf-signal-soft: oklch(74.6% 0.16 232.661 / 0.34);
+  --wf-signal-faint: oklch(74.6% 0.16 232.661 / 0.08);
+
+  --wf-human: oklch(82.8% 0.189 84.429);
+  --wf-human-soft: oklch(82.8% 0.189 84.429 / 0.34);
+  --wf-human-faint: oklch(82.8% 0.189 84.429 / 0.08);
+
+  --wf-sleep: #a78bfa;
+  --wf-sleep-soft: rgb(167 139 250 / 0.34);
+  --wf-sleep-faint: rgb(167 139 250 / 0.08);
+
+  /* Slidev's own hooks, pointed at the site palette. */
+  --slidev-theme-primary: #a78bfa;
+  --slidev-code-background: var(--jsk-bg-surface);
+  --slidev-code-foreground: var(--jsk-body);
+  --slidev-code-radius: 0.5rem;
+}

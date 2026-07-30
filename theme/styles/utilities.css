@@ -1,0 +1,53 @@
+/* Small classes the deck leans on. Kept in the theme so slides.md stays free of <style>. */
+
+/* Quiet divider between a claim and its evidence. */
+.rule {
+  height: 1px;
+  background: var(--jsk-border-subtle);
+  margin: 1.25rem 0;
+}
+
+/* Accent eyebrow, for use where a markdown h6 would be awkward. */
+.kicker {
+  font-family: var(--jsk-font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--jsk-accent);
+}
+
+/* Monospace chip for file paths and signal names. */
+.tag {
+  display: inline-block;
+  padding: 0.12rem 0.45rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--jsk-border-subtle);
+  background: var(--jsk-bg-surface);
+  font-family: var(--jsk-font-mono);
+  font-size: 0.72em;
+  color: var(--jsk-body);
+}
+
+.lede {
+  font-size: 1.15em;
+  line-height: 1.55;
+  color: var(--jsk-body);
+}
+
+.dim {
+  color: var(--jsk-muted);
+}
+
+/* Terminal transcript block. */
+.terminal {
+  background: var(--jsk-bg-surface);
+  border: 1px solid var(--jsk-border-subtle);
+  border-radius: 0.5rem;
+}
+
+/* Colour helpers keyed to the four kinds of waiting. */
+.wf-run { color: var(--wf-run); }
+.wf-signal { color: var(--wf-signal); }
+.wf-human { color: var(--wf-human); }
+.wf-sleep { color: var(--wf-sleep); }

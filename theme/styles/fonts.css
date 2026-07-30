@@ -1,0 +1,32 @@
+/*
+ * Self-hosted, latin subset only — the same variable fonts juststeveking.com serves.
+ * Bundled rather than fetched so the deck renders identically on bad conference wifi.
+ * Geist and Geist Mono: SIL OFL 1.1. Source Serif 4: SIL OFL 1.1.
+ *
+ * font-display: block, not swap — a flash of fallback text mid-talk is worse than
+ * a few milliseconds of nothing.
+ */
+
+@font-face {
+  font-family: 'Geist Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: block;
+  src: url('../fonts/geist-latin.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Geist Mono Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: block;
+  src: url('../fonts/geist-mono-latin.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Source Serif 4 Variable';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: block;
+  src: url('../fonts/source-serif-4-latin.woff2') format('woff2-variations');
+}

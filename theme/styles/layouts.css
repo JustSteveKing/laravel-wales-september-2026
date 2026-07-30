@@ -1,0 +1,147 @@
+/* Per-layout composition. Layout components add DOM; everything else is styled here. */
+
+/* ---------- cover ---------- */
+
+.slidev-layout.cover {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  height: 100%;
+}
+
+.slidev-layout.cover .cover-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(58% 52% at 16% 6%, rgb(167 139 250 / 0.16) 0%, transparent 62%),
+    radial-gradient(46% 42% at 88% 94%, rgb(167 139 250 / 0.07) 0%, transparent 66%);
+}
+
+.slidev-layout.cover .cover-inner {
+  position: relative;
+  margin-block: auto;
+  width: 100%;
+}
+
+.slidev-layout.cover h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+.slidev-layout.cover h1 + p {
+  font-size: 1.4rem;
+  color: var(--jsk-body);
+  margin-top: 0.6rem;
+}
+
+/* ---------- section ---------- */
+
+.slidev-layout.section {
+  display: grid;
+  height: 100%;
+}
+
+.slidev-layout.section .section-inner {
+  display: flex;
+  gap: 1.6rem;
+  margin-block: auto;
+  width: 100%;
+}
+
+.slidev-layout.section .section-bar {
+  flex: none;
+  width: 3px;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, var(--jsk-accent), rgb(167 139 250 / 0.05));
+}
+
+.slidev-layout.section h1 {
+  font-size: 3rem;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+}
+
+.slidev-layout.section h1 + p {
+  font-size: 1.3rem;
+  color: var(--jsk-muted);
+}
+
+/* ---------- statement ---------- */
+
+.slidev-layout.statement {
+  display: grid;
+  height: 100%;
+  text-align: center;
+}
+
+.slidev-layout.statement .statement-inner {
+  margin-block: auto;
+  width: 100%;
+}
+
+.slidev-layout.statement h1 {
+  font-size: 2.6rem;
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+/* ---------- end ---------- */
+
+.slidev-layout.end {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  height: 100%;
+  text-align: center;
+}
+
+.slidev-layout.end .cover-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(58% 52% at 16% 6%, rgb(167 139 250 / 0.16) 0%, transparent 62%),
+    radial-gradient(46% 42% at 88% 94%, rgb(167 139 250 / 0.07) 0%, transparent 66%);
+}
+
+.slidev-layout.end .cover-inner {
+  position: relative;
+  margin-block: auto;
+  width: 100%;
+}
+
+/* Two-up close: the thank-you and the links on the left, the questions I expect to
+   be asked on the right. Needs to out-specify `.end`'s centring, hence the nesting. */
+.slidev-layout.end .end-columns {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 3rem;
+  align-items: start;
+  text-align: left;
+}
+
+/* 2.5rem across a third of the canvas is a wrapped mess, same as in a two-cols. */
+.slidev-layout.end .end-columns h1 {
+  font-size: 2rem;
+  letter-spacing: -0.025em;
+}
+
+/* ---------- two columns ---------- */
+
+/* Headings shrink in a 2-up: 2.5rem across half a canvas is a wrapped mess. */
+.slidev-layout.two-columns h1 {
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.6rem;
+}
+
+/* ---------- slide chrome ---------- */
+
+.slidev-page-number,
+.slidev-layout .slidev-page-number {
+  font-family: var(--jsk-font-mono);
+  color: var(--jsk-muted);
+}

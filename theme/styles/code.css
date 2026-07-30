@@ -1,0 +1,56 @@
+/*
+ * Code chrome. Shiki owns the token colours; this owns the box around them.
+ * Sized so a real PHP class fits on one slide without a scrollbar.
+ */
+
+.slidev-layout .slidev-code,
+.slidev-layout pre.shiki {
+  background: var(--jsk-bg-surface) !important;
+  border: 1px solid var(--jsk-border-subtle);
+  border-radius: 0.5rem;
+  padding: 0.85rem 1rem;
+  font-family: var(--jsk-font-mono);
+  font-size: 0.78em;
+  line-height: 1.5;
+  font-variant-ligatures: none;
+}
+
+/* Long classes — opt in per slide with `dense` on a wrapper. */
+.slidev-layout .dense .slidev-code,
+.slidev-layout .dense pre.shiki {
+  font-size: 0.66em;
+  line-height: 1.45;
+}
+
+/* Inline code: accent-tinted, no heavy chip. */
+.slidev-layout :not(pre) > code {
+  font-family: var(--jsk-font-mono);
+  font-size: 0.86em;
+  color: var(--jsk-accent);
+  background: rgb(167 139 250 / 0.08);
+  border-radius: 0.25rem;
+  padding: 0.1em 0.32em;
+}
+
+/* Line highlighting — dim the rest rather than tint the focus. */
+.slidev-layout .slidev-code .line.highlighted {
+  background: rgb(167 139 250 / 0.1);
+  box-shadow: inset 2px 0 0 var(--jsk-accent);
+}
+
+.slidev-layout .slidev-code .line.dimmed {
+  opacity: 0.32;
+}
+
+/* Filename tab on ```php [filename.php] blocks. */
+.slidev-layout .slidev-code-wrapper .slidev-code-title {
+  font-family: var(--jsk-font-mono);
+  font-size: 0.7rem;
+  color: var(--jsk-muted);
+  border-bottom: 1px solid var(--jsk-border-subtle);
+}
+
+.slidev-layout .shiki-magic-move-line-number {
+  color: var(--jsk-muted);
+  opacity: 0.4;
+}

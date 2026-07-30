@@ -1,0 +1,28 @@
+{
+  "name": "slidev-theme-juststeveking",
+  "version": "1.0.0",
+  "description": "Slidev theme matching juststeveking.com — Geist headings, Source Serif 4 body, violet on near-black.",
+  "author": "Steve McDougall",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "engines": {
+    "slidev": ">=52.0.0"
+  },
+  "slidev": {
+    "defaults": {
+      "aspectRatio": "16/9",
+      "canvasWidth": 980,
+      "colorSchema": "dark",
+      "fonts": {
+        "provider": "none",
+        "sans": "Geist Variable",
+        "serif": "Source Serif 4 Variable",
+        "mono": "Geist Mono Variable"
+      }
+    }
+  }
+}
