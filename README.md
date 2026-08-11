@@ -1,3 +1,8 @@
+> [!NOTE]
+> **Archived.** The slides now live in my talks monorepo, where they share one
+> Slidev theme with every other deck. This repository is a point-in-time copy
+> kept so existing links keep working; it is no longer edited.
+
 # Waiting is a Feature
 
 **Modelling processes that stop, in Laravel** — a 35 minute talk for [Laravel Wales](https://laravelwales.co.uk), September 2026.
